@@ -235,23 +235,26 @@ and (max-width: 640px) {
 
   nav {
     display: block;
-    margin-right: 200px;
+    /* text-align: center; */
+    margin-right: 200px !important;
+    margin-left: 80px !important;
     max-width: 100%;
   }
 
   .auth-image {
     display: block; 
     position: static;
-    margin: 0 auto;
+    margin: 0 aut o;
     width: 100%;
   }
 
   .work {
     align-content: center; 
     display: block;
-    width: 100%;
+    width: 100% !important;
     margin: 0 auto;
   }
+}
 
 /* between 641 and 768px */
 
@@ -273,7 +276,15 @@ and (max-width: 640px) {
       background: #fff;
       border: 1px solid #ddd;
     }
+    .work {
+      align-content: center; 
+      display: block;
+      width: 100% !important;
+      margin: 0 auto;
+    }
 
+
+  }
 /* between 769 and 980px */
 
     @media only screen 
@@ -282,26 +293,17 @@ and (max-width: 640px) {
       body {
        width: 100%;  
       }
-      
-      logo {
-        padding: 30px; 
-      }
-
+    
       #topbanner {
         position: fixed;
-        padding: 80px;
-        z-index: 99;
         width: 100%;
         margin: 0 0 30px;
-        overflow: auto;
         color: #fff;
         background: #fff;
         border-bottom: 2px solid #ccc;
       }      
 
       nav {
-        padding: 30px; 
         box-sizing: border-box;
-        /* margin-right: -50px; */
       }
     }
